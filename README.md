@@ -1,5 +1,5 @@
 # Vintage-car
-Es un diseño en HTML, CSS Y JAVASCRIPT falta que sea responsivey unos retoques.
+Practicando un Diseño en HTML, CSS Y JAVASCRIPT falta que sea responsivey unos retoques.
 
 ![vintage-car1](https://user-images.githubusercontent.com/53599271/92304521-03b06b80-ef7f-11ea-94af-4ca6e61efc4d.PNG)
 
