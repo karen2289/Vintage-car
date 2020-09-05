@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.main-bg{
+    background: url(img/bg-main.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.slide-item-image img{
+    width: 100% !important;
+    margin: 0 auto;
+    margin-top: auto; /* no va aqui */
+}
+.banner-slider{
+    height: 100vh;
+}
+.slide-item{
+    height: 100vh;
+}
+.slider-overlay{
+    position: absolute;
+    width: 100%;
+    bottom:  6%; /*43px*/
+    left: 55px;
+}
+.slider-overlay h2,
+.slider-overlay h3{
+    color: #7f7f7f;
+}
+/* raya */
+.slider-overlay h2:before{
+    background: #8c7239;
+    height: 2px;
+    width: 72px;
+    position: absolute;
+    content: "";
+    bottom: -3px;
+}
+.slider-overlay h2{
+    font-size: 22px;
+    font-weight: 599;
+    margin-bottom: 14px;
+    position: relative;
+}
+.slider-overlay h3{
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.top-car-title h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 28px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 100px; /* 80px */
+}
+/* Letra de fondo */
+.top-car-title h1{
+    color: #1a272e;
+    font-weight: bold;
+    font-size: 104px;
+    letter-spacing: 14px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 52px; /* 32px*/
+}
+a.logo img{
+    margin: 7px 0 7px -80px; /* 0 0 38px*/ /* 38px */
+}
+/* MENU  ( circulo )*/
+.hamburger-menu-button{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    /*display: block;*/
+    position: relative;
+    margin-top: 35px;
+    z-index: 100;
+    background: #8c7239;
+    box-sizing: content-box;
+    border-radius: 50%;
+    text-indent: 100%;
+    color: transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+}
+.hamburger-menu-button-open{
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -12px;
+}
+.hamburger-menu-button-open,
+.hamburger-menu-button-open::before,
+.hamburger-menu-button-open::after{
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: white;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.hamburger-menu-button-open::before,
+.hamburger-menu-button-open::after{
+    left: 0;
+    content: "";
+}
+.hamburger-menu-button-open::before{
+    top: 7px;
+}
+.hamburger-menu-button-open::after{
+    bottom: 7px;
+}
+/* Llamada indefinida para el js */
+.hamburger-menu-button-close{
+    background: transparent;
+    transform: rotate(180deg);
+}
+/* Para rotar medio circulo del menu y se abra el menu y aparezca un x */
+.hamburger-menu-button-close::before{
+    transform: translateY(-7px) rotate(45deg);
+}
+.hamburger-menu-button-close::after{
+    transform: translateY(7px) rotate(-45deg);
+}
+/* fin del circulo */
+.ham-menu{
+    position: absolute;
+    top: 42px;
+    left: 40px;
+    margin: auto;
+    max-width: 590px;
+    overflow: hidden;
+}
+.ham-menu ul{
+    transform: translateX(-110%);
+    background-color: yellow;
+    color: black;
+    transition: all 0.5s ease-in-out;
+    margin-left: -40px;
+}
+.ham-menu ul li{
+    display: inline-block;
+}
+.ham-menu ul li:first-child .ham-menu ul li a{
+    padding-left: 30px;
+}
+.ham-menu ul li a{
+    padding: 15px;
+    display: block;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    font-size: 13px;
+}
+.ham-menu ul li.active a,
+.ham-menu ul li a:hover{
+    background-color: #8c7239;
+    color: white !important;
+    text-decoration: none;
+}
+button#hamburger-menu{
+    flex: right;
+    margin: 37px 20px 0 0;
+}
+button:focus{
+    outline: none;
+}
+/* CENTRAR IMAGEN DEL COCHE */
+.header{
+    position: absolute;
+    width: 100%;
+}
